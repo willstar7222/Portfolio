@@ -43,7 +43,7 @@ header.hero p {
 .socials a {
   margin: 0 1rem;
   color: var(--fg);
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: bold;
   transition: color 0.3s;
 }
