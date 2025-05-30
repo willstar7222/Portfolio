@@ -123,3 +123,16 @@ footer {
   padding: 2rem;
   font-size: 0.875rem;
 }
+
+/* === Section Overrides for Tighter Spacing === */
+
+/* Contact override */
+#contact {
+  padding: 0.5rem 2rem;
+}
+
+/* Certifications and Education tighter */
+#certifications,
+#school {
+  padding: 1rem 2rem;
+}
