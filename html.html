@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willem Cashion | IT Support Specialist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#0b0b0f',
+                        sand: '#f8f6f2',
+                        ice: '#7be7ff',
+                        acid: '#a3ffb0',
+                        ember: '#ffb26b'
+                    },
+                    fontFamily: {
+                        body: ['"Space Grotesk"', 'sans-serif'],
+                        display: ['"Fraunces"', 'serif']
+                    },
+                    backgroundImage: {
+                        'hero-glow': 'radial-gradient(circle at 20% 20%, rgba(123, 231, 255, 0.25), transparent 55%), radial-gradient(circle at 80% 10%, rgba(163, 255, 176, 0.2), transparent 45%), radial-gradient(circle at 50% 80%, rgba(255, 178, 107, 0.25), transparent 55%)'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-18px)' }
+                        },
+                        floatSlow: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-28px)' }
+                        }
+                    },
+                    animation: {
+                        float: 'float 12s ease-in-out infinite',
+                        'float-slow': 'floatSlow 18s ease-in-out infinite'
+                    },
+                    boxShadow: {
+                        glow: '0 20px 60px rgba(123, 231, 255, 0.15)'
+                    }
+                }
+            }
+        };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-ink text-sand font-body antialiased">
+    <div class="pointer-events-none fixed inset-0 -z-10">
+        <div class="absolute inset-0 bg-hero-glow"></div>
+        <div class="absolute -top-24 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-ice/20 blur-[140px] animate-float-slow"></div>
+        <div class="absolute bottom-0 right-0 h-[360px] w-[360px] rounded-full bg-ember/20 blur-[140px] animate-float"></div>
+        <div class="absolute inset-0 bg-grid opacity-40"></div>
+    </div>
+
+    <header class="fixed top-0 z-50 w-full border-b border-white/10 bg-ink/70 backdrop-blur">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+            <div class="text-xs font-semibold uppercase tracking-[0.4em] text-sand/70">Willem 2026</div>
+            <nav class="hidden items-center gap-6 text-[0.7rem] uppercase tracking-[0.28em] text-sand/60 md:flex">
+                <a href="#experience" class="transition hover:text-ice">Experience</a>
+                <a href="#projects" class="transition hover:text-ice">Projects</a>
+                <a href="#education" class="transition hover:text-ice">Education</a>
+                <a href="mailto:willemcashion@gmail.com" class="text-ice transition hover:text-acid">willemcashion@gmail.com</a>
+            </nav>
+            <a href="mailto:willemcashion@gmail.com" class="md:hidden text-[0.7rem] uppercase tracking-[0.28em] text-ice">Email</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="min-h-screen pt-28">
+            <div class="mx-auto flex max-w-6xl flex-col gap-10 px-6 pb-16">
+                <div class="reveal" style="--delay: 80ms">
+                    <p class="text-xs uppercase tracking-[0.4em] text-sand/60">IT Support and Security</p>
+                </div>
+                <h1 class="reveal font-display text-5xl uppercase leading-[0.9] text-sand md:text-7xl lg:text-8xl" style="--delay: 140ms">
+                    IT Support
+                    <span class="block text-ice">and Security</span>
+                </h1>
+                <p class="reveal max-w-2xl text-lg text-sand/70 md:text-xl" style="--delay: 220ms">
+                    Cyber security student specializing in self-taught Jira, network infrastructure, Firewalls,  and hardware troubleshooting. I build secure environments from the ground up.
+                </p>
+                <div class="reveal flex flex-col gap-4 sm:flex-row" style="--delay: 300ms">
+                    <a href="mailto:willemcashion@gmail.com" class="inline-flex items-center justify-center rounded-full border border-ice/40 px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-ice transition hover:-translate-y-0.5 hover:bg-ice/10">
+                        Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/willem-cashion-0bb144331" target="_blank" class="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-sand/80 transition hover:-translate-y-0.5 hover:border-ice/50 hover:text-ice">
+                        LinkedIn
+                    </a>
+                    <a href="Resume - Willem Cashion.pdf" target="_blank" class="inline-flex items-center justify-center rounded-full bg-ice px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-ink transition hover:-translate-y-0.5 hover:shadow-glow">
+                        View Resume
+                    </a>
+                    <a href="Willem Cashion Reference.pdf" target="_blank" class="inline-flex items-center justify-center rounded-full bg-acid px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-ink transition hover:-translate-y-0.5 hover:shadow-glow">
+                        View References
+                    </a>
+                </div>
+                <div class="reveal flex flex-wrap gap-3" style="--delay: 380ms">
+                    <span class="rounded-full border border-white/10 px-4 py-2 text-[0.65rem] uppercase tracking-[0.28em] text-sand/70">Jira</span>
+                    <span class="rounded-full border border-white/10 px-4 py-2 text-[0.65rem] uppercase tracking-[0.28em] text-sand/70">VLANs</span>
+                    <span class="rounded-full border border-white/10 px-4 py-2 text-[0.65rem] uppercase tracking-[0.28em] text-sand/70">OPNsense</span>
+                    <span class="rounded-full border border-white/10 px-4 py-2 text-[0.65rem] uppercase tracking-[0.28em] text-sand/70">Plex</span>
+                    <span class="rounded-full border border-white/10 px-4 py-2 text-[0.65rem] uppercase tracking-[0.28em] text-sand/70">Hardware</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24">
+            <div class="mx-auto max-w-6xl px-6">
+                <div class="section-label">Technical Project Tabs</div>
+                <div class="mt-10 space-y-6">
+                    <article class="project-tab reveal rounded-3xl border border-white/10 bg-white/5 p-6 shadow-lg backdrop-blur" data-tab data-open="true" style="--delay: 120ms">
+                        <button class="tab-header flex w-full items-center justify-between text-left" aria-expanded="true" data-tab-button>
+                            <h2 class="font-display text-2xl uppercase tracking-wide md:text-3xl">01. OPNsense</h2>
+                            <span class="tab-plus text-3xl text-ice">+</span>
+                        </button>
+                        <div class="tab-content mt-6 grid gap-6 md:grid-cols-[1.2fr_1fr]">
+                            <div class="space-y-4 text-sand/70">
+                                <p>I protected my entire house by building a custom firewall using OPNsense. This project involved setting up a physical switch to control all home network traffic. I configured VLANs to isolate guest traffic and implemented security rules to prevent unauthorized access. I also configured Adgaurd for DNS tracker and adblocking</p>
+                                <div class="flex flex-wrap gap-2 text-[0.65rem] uppercase tracking-[0.28em] text-sand/50">
+                                    <span class="rounded-full border border-white/10 px-3 py-2">Firewall</span>
+                                    <span class="rounded-full border border-white/10 px-3 py-2">Segmentation</span>
+                                    <span class="rounded-full border border-white/10 px-3 py-2">Policy</span>
+                                </div>
+                            </div>
+                            <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cyber Security Hardware" class="h-64 w-full rounded-2xl object-cover shadow-glow">
+                        </div>
+                    </article>
+
+                    <article class="project-tab reveal rounded-3xl border border-white/10 bg-white/5 p-6 shadow-lg backdrop-blur" data-tab data-open="false" style="--delay: 200ms">
+                        <button class="tab-header flex w-full items-center justify-between text-left" aria-expanded="false" data-tab-button>
+                            <h2 class="font-display text-2xl uppercase tracking-wide md:text-3xl">02. Self-Taught Jira and Ticketing</h2>
+                            <span class="tab-plus text-3xl text-ice">+</span>
+                        </button>
+                        <div class="tab-content mt-6 grid gap-6 md:grid-cols-[1.2fr_1fr]">
+                            <div class="space-y-4 text-sand/70">
+                                <p>To prepare for a help desk role, I have self-taught Jira for ticket management. I understand how to track issues, prioritize tasks, and manage workflows, ensuring high-quality IT support in a corporate environment.</p>
+                                <div class="flex flex-wrap gap-2 text-[0.65rem] uppercase tracking-[0.28em] text-sand/50">
+                                    <span class="rounded-full border border-white/10 px-3 py-2">Workflows</span>
+                                    <span class="rounded-full border border-white/10 px-3 py-2">Prioritization</span>
+                                    <span class="rounded-full border border-white/10 px-3 py-2">Help Desk</span>
+                                </div>
+                            </div>
+                            <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800" alt="IT Support Ticketing Dashboard" class="h-64 w-full rounded-2xl object-cover shadow-glow">
+                        </div>
+                    </article>
+
+                    <article class="project-tab reveal rounded-3xl border border-white/10 bg-white/5 p-6 shadow-lg backdrop-blur" data-tab data-open="false" style="--delay: 280ms">
+                        <button class="tab-header flex w-full items-center justify-between text-left" aria-expanded="false" data-tab-button>
+                            <h2 class="font-display text-2xl uppercase tracking-wide md:text-3xl">04. NAS and Media Infrastructure</h2>
+                            <span class="tab-plus text-3xl text-ice">+</span>
+                        </button>
+                        <div class="tab-content mt-6 grid gap-6 md:grid-cols-[1.2fr_1fr]">
+                            <div class="space-y-4 text-sand/70">
+                                <p>I maintain a home infrastructure consisting of OpenMediaVault (NAS) and Plex. I manage resource allocation, port forwarding, and troubleshooting server-side crashes for a Minecraft server with 99% uptime.</p>
+                                <div class="flex flex-wrap gap-2 text-[0.65rem] uppercase tracking-[0.28em] text-sand/50">
+                                    <span class="rounded-full border border-white/10 px-3 py-2">Storage</span>
+                                    <span class="rounded-full border border-white/10 px-3 py-2">Streaming</span>
+                                    <span class="rounded-full border border-white/10 px-3 py-2">Uptime</span>
+                                </div>
+                            </div>
+                            <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Home Server Hardware" class="h-64 w-full rounded-2xl object-cover shadow-glow">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-24">
+            <div class="mx-auto max-w-6xl px-6">
+                <div class="section-label">Work History</div>
+                <div class="mt-10 space-y-10">
+                    <div class="reveal grid gap-6 border-t border-white/10 pt-8 md:grid-cols-[200px_1fr]" style="--delay: 140ms">
+                        <div class="text-xs font-semibold uppercase tracking-[0.3em] text-ice">Nov 2024 - Present</div>
+                        <div class="space-y-3">
+                            <h3 class="font-display text-2xl md:text-3xl">Private Care Specialist and Coordinator</h3>
+                            <p class="text-sand/70">Providing dedicated, one-on-one support for an elderly client. I manage and coordinate all daily logistics, including scheduling medical appointments, organizing meal deliveries, and managing external cleaning services. This role requires high-level organization, time management, and the ability to communicate effectively with service providers.</p>
+                        </div>
+                    </div>
+                    <div class="reveal grid gap-6 border-t border-white/10 pt-8 md:grid-cols-[200px_1fr]" style="--delay: 220ms">
+                        <div class="text-xs font-semibold uppercase tracking-[0.3em] text-ice">May 2024</div>
+                        <div class="space-y-3">
+                            <h3 class="font-display text-2xl md:text-3xl">Intern at Cloud Coders</h3>
+                            <p class="text-sand/70">Developed secure data models in Excel. I utilized password protection and cell-locking to prevent user error, ensuring the client database remained accurate and secure for marketing operations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="py-24">
+            <div class="mx-auto max-w-6xl px-6">
+                <div class="section-label">Education</div>
+                <div class="mt-10 space-y-10">
+                    <div class="reveal grid gap-6 border-t border-white/10 pt-8 md:grid-cols-[200px_1fr]" style="--delay: 160ms">
+                        <div class="text-xs font-semibold uppercase tracking-[0.3em] text-ice">July 2024 - July 2025</div>
+                        <div class="space-y-3">
+                            <h3 class="font-display text-2xl md:text-3xl">Certificate IV Cyber Security</h3>
+                            <p class="text-sand/70">TAFE Queensland - <a href="https://tafeqld.edu.au/course/18/18451/certificate-iv-in-cyber-security" target="_blank" class="text-ice underline-offset-4 transition hover:text-acid hover:underline">Course Link</a></p>
+                        </div>
+                    </div>
+                    <div class="reveal grid gap-6 border-t border-white/10 pt-8 md:grid-cols-[200px_1fr]" style="--delay: 240ms">
+                        <div class="text-xs font-semibold uppercase tracking-[0.3em] text-ice">January 2023 - June 2024</div>
+                        <div class="space-y-3">
+                            <h3 class="font-display text-2xl md:text-3xl">Certificate II Autonomous Technology</h3>
+                            <p class="text-sand/70">TAFE Queensland - <a href="https://tafeqld.edu.au/course/19/19102/certificate-ii-in-autonomous-technologies" target="_blank" class="text-ice underline-offset-4 transition hover:text-acid hover:underline">Course Link</a></p>
+                        </div>
+                    </div>
+                    <div class="reveal grid gap-6 border-t border-white/10 pt-8 md:grid-cols-[200px_1fr]" style="--delay: 320ms">
+                        <div class="text-xs font-semibold uppercase tracking-[0.3em] text-ice">Graduated</div>
+                        <div class="space-y-3">
+                            <h3 class="font-display text-2xl md:text-3xl">Samford Valley Steiner School</h3>
+                            <p class="text-sand/70">High School Education.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24">
+            <div class="mx-auto flex max-w-6xl flex-col items-center gap-8 px-6 text-center">
+                <p class="reveal font-display text-3xl uppercase tracking-wide text-sand md:text-5xl" style="--delay: 120ms">I build systems that stay protected.</p>
+                <div class="reveal" style="--delay: 200ms">
+                    <a href="mailto:willemcashion@gmail.com" class="inline-flex items-center justify-center rounded-full border border-ice/40 px-8 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-ice transition hover:-translate-y-0.5 hover:bg-ice/10">
+                        Email Willem
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
